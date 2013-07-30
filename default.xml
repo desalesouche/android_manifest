@@ -4,7 +4,9 @@
   <remote  name="aosp"
            fetch="https://android-review.googlesource.com/" />
   <remote name="rascarlo"
-           fetch="git://github.com/rascarlo/" /> 
+           fetch="git://github.com/rascarlo/" />
+  <remote name="psx"
+           fetch="git://github.com/PSX-PureSpeed/" /> 
   <remote name="CyanogenMod"
            fetch="git://github.com/CyanogenMod/" />
   <default revision="refs/tags/android-4.3_r2.1"
@@ -206,7 +208,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="rascarlo" revision="jb-ras-mr2.0" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="psx" revision="jb-mr2" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -289,7 +291,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="rascarlo" revision="jb-ras-mr2.0"/>
+  <project path="packages/apps/Settings" name="android_packages_apps_settings" remote="psx" revision="jb-mr2"/>
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
