@@ -1,1 +1,5 @@
-I am not done yet
+repo init -u https://github.com/PSX-PureSpeed/android_manifest.git -b jb-mr2
+
+
+
+Woah, where did my lighter go!
