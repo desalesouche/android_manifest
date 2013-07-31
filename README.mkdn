@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 repo init -u https://github.com/rascarlo/android_manifest.git -b vanilla-mr1.1
 
 i am [@rascarlo](https://twitter.com/rascarlo) on Twitter
+=======
+repo init -u https://github.com/PSX-PureSpeed/android_manifest.git -b jb-mr2
+
+
+
+Woah, where did my lighter go!
+>>>>>>> 5afb25ebc88d252da319ddeeee03b5946e9878e6
