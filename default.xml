@@ -13,7 +13,7 @@
            remote="aosp"
            sync-j="4" />
 
-<<<<<<< HEAD
+
   <project path="build" name="platform_build" groups="pdk" remote="psx" revision="jb-mr2.0" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
@@ -30,7 +30,7 @@
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
-<<<<<<< HEAD
+
   <project path="dalvik" name="android_dalvik" remote="psx" revision="cm-10.2"/>
 =======
   <project path="dalvik" name="platform/dalvik" />
@@ -389,7 +389,7 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-<<<<<<< HEAD
+
   <project path="vendor/lge" name="android_vendor_lge" remote="rascarlo" revision="jb-ras-mr2.0" />
 =======
 >>>>>>> 5afb25ebc88d252da319ddeeee03b5946e9878e6
