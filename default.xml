@@ -379,6 +379,6 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="vendor/lge" name="android_vendor_lge" remote="rascarlo" revision="jb-ras-mr2.0" />
-  <project path="vendor/rascarlo" name="android_vendor_rascarlo" remote="psx" revision="jb-mr2" />
+  <project path="vendor/psx" name="android_vendor_psx" remote="psx" revision="jb-mr2" />
 
 </manifest>
