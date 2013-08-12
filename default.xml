@@ -32,6 +32,7 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" />
+  <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" revision="refs/tags/android-4.3_r2.1_" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
@@ -46,6 +47,9 @@
   <project path="device/lge/mako" name="device_lge_mako" remote="psx" revision="jb-mr2.1" groups="device,mako" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" revision="refs/tags/android-4.3_r2.1_" />
   <project path="device/sample" name="device/sample" groups="pdk" />
+  <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device,tuna" />
+  <project path="device/samsung/manta" name="android_device_samsung_manta" groups="device,manta" remote="rascarlo" revision="jb-ras-mr2.0" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" groups="device,tuna" remote="rascarlo" revision="jb-ras-mr2.0" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -359,5 +363,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="vendor/lge" name="android_vendor_lge" remote="rascarlo" revision="jb-ras-mr2.0" />
   <project path="vendor/psx" name="android_vendor_psx" remote="psx" revision="jb-mr2" />
+  <project path="vendor/asus" name="android_vendor_asus" remote="rascarlo" revision="jb-ras-mr2.0" />
+  <project path="vendor/samsung" name="android_vendor_samsung" remote="rascarlo" revision="jb-ras-mr2.0" />
 
 </manifest>
