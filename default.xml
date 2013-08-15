@@ -5,9 +5,6 @@
            fetch="https://android-review.googlesource.com/" />
   <remote name="rascarlo"
            fetch="git://github.com/rascarlo/" />
-  <remote  name="github"
-           fetch="https://github.com"
-           review="http://gerrit.colormeparanoid.com/" />
   <remote name="psx"
            fetch="git://github.com/PSX-PureSpeed/" /> 
   <remote name="CyanogenMod"
