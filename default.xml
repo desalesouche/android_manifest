@@ -2,31 +2,31 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android-review.googlesource.com/" />
-  <remote name="psx"
-           fetch="git://github.com/PSX-PureSpeed/" /> 
-  <remote name="CyanogenMod"
-           fetch="git://github.com/CyanogenMod/" />
+           fetch="https://android-review.googlesource.com/" /> 
+  
+  <remote  name="github"
+           fetch="git://github.com/" />
+  
   <default revision="refs/tags/android-4.3_r2.1"
            remote="aosp"
            sync-j="4" />
 
 
-  <project path="build" name="android_build" groups="pdk" remote="psx" revision="jb-4.3" >
+  <project path="build" name="PSX-PureSpeed/android_build" groups="pdk" remote="github" revision="jb-4.3" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bionic" name="android_bionic" remote="psx" revision="jb-4.3" />
+  <project path="bionic" name="PSX-PureSpeed/android_bionic" remote="github" revision="jb-4.3" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
-  <project path="dalvik" name="android_dalvik" remote="psx" revision="jb-4.3"/>
+  <project path="dalvik" name="PSX-PureSpeed/android_dalvik" remote="github" revision="jb-4.3"/>
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="platform_development" remote="psx" revision="jb-4.3" />
+  <project path="development" name="PSX-PureSpeed/platform_development" remote="github" revision="jb-4.3" />
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
@@ -42,12 +42,12 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/mako" name="device_lge_mako" remote="psx" revision="jb-4.3" groups="device,mako" />
+  <project path="device/lge/mako" name="PSX-PureSpeed/device_lge_mako" remote="github" revision="jb-4.3" groups="device,mako" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" revision="refs/tags/android-4.3_r2.1_" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device,tuna" />
-  <project path="device/samsung/manta" name="android_device_samsung_manta" groups="device,manta" remote="psx" revision="jb-4.3" />
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" groups="device,tuna" remote="psx" revision="jb-4.3" />
+  <project path="device/samsung/manta" name="PSX-PureSpeed/android_device_samsung_manta" groups="device,manta" remote="github" revision="jb-4.3" />
+  <project path="device/samsung/tuna" name="PSX-PureSpeed/android_device_samsung_tuna" groups="device,tuna" remote="github" revision="jb-4.3" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -64,7 +64,7 @@
   <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" groups="pdk" />
-  <project path="external/busybox" name="android_external_busybox" remote="CyanogenMod" revision="cm-10.2" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-10.2" />
   <project path="external/bzip2" name="platform/external/bzip2" groups="pdk" />
   <project path="external/ceres-solver" name="platform/external/ceres-solver" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" groups="pdk" />
@@ -169,7 +169,7 @@
   <project path="external/openfst" name="platform/external/openfst" />
   <project path="external/openssh" name="platform/external/openssh" />
   <project path="external/openssl" name="platform/external/openssl" groups="pdk" />
-  <project path="external/oprofile" name="android_external_oprofile" remote="psx" revision="jb-4.3" />
+  <project path="external/oprofile" name="PSX-PureSpeed/android_external_oprofile" remote="github" revision="jb-4.3" />
   <project path="external/ping" name="platform/external/ping" />
   <project path="external/ping6" name="platform/external/ping6" />
   <project path="external/ppp" name="platform/external/ppp" />
@@ -183,7 +183,7 @@
   <project path="external/robolectric" name="platform/external/robolectric" />
   <project path="external/safe-iop" name="platform/external/safe-iop" groups="pdk" />
   <project path="external/sepolicy" name="platform/external/sepolicy" groups="pdk" />
-  <project path="external/skia" name="android_external_skia" remote="psx" revision="jb-4.3" />
+  <project path="external/skia" name="PSX-PureSpeed/android_external_skia" remote="github" revision="jb-4.3" />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
   <project path="external/sonivox" name="platform/external/sonivox" groups="pdk" />
@@ -213,15 +213,15 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="android_frameworks_av" remote="psx" revision="jb-4.3" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="psx" revision="jb-4.3" />
+  <project path="frameworks/av" name="PSX-PureSpeed/android_frameworks_av" remote="github" revision="jb-4.3" />
+  <project path="frameworks/base" name="PSX-PureSpeed/android_frameworks_base" remote="github" revision="jb-4.3" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="android_frameworks_native" remote="psx" revision="jb-4.3" />
+  <project path="frameworks/native" name="PSX-PureSpeed/android_frameworks_native" remote="github" revision="jb-4.3" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
@@ -250,11 +250,11 @@
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
-  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="psx" revision="jb-4.3" />
+  <project path="hardware/qcom/display" name="PSX-PureSpeed/android_hardware_qcom_display" remote="github" revision="jb-4.3" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
-  <project path="hardware/qcom/power" name="android_hardware_qcom_power" remote="psx" revision="jb-4.3" />
+  <project path="hardware/qcom/power" name="PSX-PureSpeed/android_hardware_qcom_power" remote="github" revision="jb-4.3" />
   <project path="hardware/qcom/sensors" name="platform/hardware/qcom/sensors" groups="qcom" />
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
@@ -265,7 +265,7 @@
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
   <project path="libcore" name="platform/libcore" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
-  <project path="ndk" name="platform_ndk" remote="psx" revision="jb-4.3" />
+  <project path="ndk" name="PSX-PureSpeed/platform_ndk" remote="github" revision="jb-4.3" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
@@ -277,15 +277,15 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
-  <project path="packages/apps/Mms" name="packages_apps_Mms" remote="psx" revision="jb-4.3" />
+  <project path="packages/apps/Mms" name="PSX-PureSpeed/packages_apps_Mms" remote="github" revision="jb-4.3" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
-  <project path="packages/apps/Phone" name="packages_apps_phone" remote="psx" revision="jb-4.3" />
+  <project path="packages/apps/Phone" name="PSX-PureSpeed/packages_apps_phone" remote="github" revision="jb-4.3" />
   <project path="packages/apps/PhoneCommon" name="platform/packages/apps/PhoneCommon" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="psx" revision="jb-4.3" />
+  <project path="packages/apps/Settings" name="PSX-PureSpeed/android_packages_apps_Settings" remote="github" revision="jb-4.3" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
-  <project path="packages/apps/Torch" name="android_packages_apps_Torch" remote="CyanogenMod" revision="cm-10.2" />
+  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github" revision="cm-10.2" />
   <project path="packages/experimental" name="platform/packages/experimental" />
   <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
@@ -339,7 +339,7 @@
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
-  <project path="system/extras" name="android_system_extras" remote="psx" groups="pdk" revision="jb-4.3" />
+  <project path="system/extras" name="PSX-PureSpeed/android_system_extras" remote="github" groups="pdk" revision="jb-4.3" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
@@ -354,9 +354,9 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/lge" name="android_vendor_lge" remote="psx" revision="jb-4.3" />
-  <project path="vendor/psx" name="android_vendor_psx" remote="psx" revision="jb-4.3" />
-  <project path="vendor/asus" name="android_vendor_asus" remote="psx" revision="jb-4.3" />
-  <project path="vendor/samsung" name="android_vendor_samsung" remote="psx" revision="jb-4.3" />
+  <project path="vendor/lge" name="PSX-PureSpeed/android_vendor_lge" remote="github" revision="jb-4.3" />
+  <project path="vendor/psx" name="PSX-PureSpeed/android_vendor_psx" remote="github" revision="jb-4.3" />
+  <project path="vendor/asus" name="PSX-PureSpeed/android_vendor_asus" remote="github" revision="jb-4.3" />
+  <project path="vendor/samsung" name="PSX-PureSpeed/android_vendor_samsung" remote="github" revision="jb-4.3" />
 
 </manifest>
