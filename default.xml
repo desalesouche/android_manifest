@@ -355,9 +355,6 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="vendor/lge" name="PSX-PureSpeed/android_vendor_lge" remote="github" revision="jb-4.3" />
   <project path="vendor/psx" name="PSX-PureSpeed/android_vendor_psx" remote="github" revision="jb-4.3" />
-  <project path="vendor/asus" name="PSX-PureSpeed/android_vendor_asus" remote="github" revision="jb-4.3" />
-  <project path="vendor/samsung" name="PSX-PureSpeed/android_vendor_samsung" remote="github" revision="jb-4.3" />
 
 </manifest>
