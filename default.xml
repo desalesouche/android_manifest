@@ -43,7 +43,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/mako" name="PSX-PureSpeed/device_lge_mako" remote="github" revision="jb-4.3" groups="device,mako" />
+  <project path="device/lge/mako" name="PSX-PureSpeed/device_lge_mako" groups="device,mako" remote="github" revision="jb-4.3" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device,tuna" />
@@ -340,7 +340,7 @@
   <project path="sdk" name="platform/sdk" />
   <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
-  <project path="system/extras" name="PSX-PureSpeed/android_system_extras" remote="github" groups="pdk" revision="jb-4.3" />
+  <project path="system/extras" name="PSX-PureSpeed/android_system_extras" groups="pdk" remote="github" revision="jb-4.3" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
