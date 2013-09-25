@@ -44,7 +44,7 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/mako" name="PSX-PureSpeed/device_lge_mako" groups="device,mako" remote="github" revision="jb-4.3" />
-  <project path="device/lge/mako-kernel" name="SiMaRom/prebuild_simakernel_mako" remote="github"  revision="jwr"/>
+  <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" revision="refs/tags/android-4.3_r1.1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/maguro" name="device/samsung/maguro" groups="device,tuna" />
   <project path="device/samsung/manta" name="PSX-PureSpeed/android_device_samsung_manta" groups="device,manta" remote="github" revision="jb-4.3" />
